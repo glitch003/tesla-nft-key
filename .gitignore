@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+.vscode
+.env
+worker/wrangler.toml
+worker/temp_binding.txt
+worker/tmp_namespaces.txt
+worker/tmp.txt

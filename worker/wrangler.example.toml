@@ -1,0 +1,15 @@
+name = "PUT_YOUR_WORKER_NAME_HERE"
+type = "webpack"
+webpack_config = "webpack.config.js"
+
+account_id = "PUT_YOUR_ACCOUNT_ID_HERE"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2022-02-05"
+
+kv_namespaces = [ 
+    # Put the output from `wrangler kv:namespace create CREDS` here.
+]
+
+site = {bucket = "../app/build", entry-point = "../worker"}

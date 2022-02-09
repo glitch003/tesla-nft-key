@@ -1,0 +1,16 @@
+{
+  "name": "tesla-nft-key",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "cd ./app && yarn && yarn build",
+    "dev": "cd ./app && yarn start && cd ../",
+    "worker": "cd ./worker && wrangler dev && cd ../",
+    "wrangler publish": "cd ./worker & yarn && wrangler publish",
+    "commit": "git add .github && git commit -m 'ci: deploy' && git push",
+    "debug-on": "cd ./app && bash ./debug_true.sh",
+    "debug-off": "cd ./app && bash ./debug_false.sh",
+    "create-db": "cd ./worker && bash ./create-db.sh"
+  }
+}
